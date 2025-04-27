@@ -5,8 +5,8 @@
 
 <x-layouts.marketing
     :seo="[
-        'title'         => setting('site.title', 'Laravel Wave'),
-        'description'   => setting('site.description', 'Software as a Service Starter Kit'),
+        'title'         => setting('site.title', 'Loue Ton Stock'),
+        'description'   => setting('site.description', 'Plateforme SaaS de location globale'),
         'image'         => url('/og_image.png'),
         'type'          => 'website'
     ]"
@@ -15,4 +15,4 @@
     <x-marketing.features></x-marketing.features>
     <x-marketing.testimonials></x-marketing.testimonials>
     <x-marketing.pricing></x-marketing.pricing>
-</x-layouts.marketing> 
+</x-layouts.marketing>
