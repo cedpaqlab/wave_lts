@@ -3,7 +3,7 @@
 <footer class="pt-10">
     <x-container>
         <div class="flex flex-wrap items-start justify-between pb-20">
-            <a href="#_" class="flex items-center w-auto mt-1 text-lg font-bold transition-all duration-300 ease-out brightness-0 md:w-1/6 hover:brightness-100">
+            <a href="{{ route('home') }}" class="flex items-center justify-center space-x-3 font-bold text-zinc-900">
                 <x-logo class="flex-shrink-0 w-auto h-8"></x-logo>
             </a>
             <div class="grid w-full grid-cols-2 pt-2 mt-20 gap-y-16 sm:grid-cols-4 lg:gap-x-8 md:w-5/6 md:mt-0 md:pr-6">

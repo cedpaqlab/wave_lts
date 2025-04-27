@@ -1,8 +1,8 @@
-<header 
-    x-data="{ 
-        mobileMenuOpen: false, 
-        scrolled: false, 
-        showOverlay: false, 
+<header
+    x-data="{
+        mobileMenuOpen: false,
+        scrolled: false,
+        showOverlay: false,
         topOffset: '5',
         evaluateScrollPosition(){
             if(window.pageYOffset > this.topOffset){
@@ -10,7 +10,7 @@
             } else {
                 this.scrolled = false;
             }
-        } 
+        }
     }"
     x-init="
         window.addEventListener('resize', function() {
@@ -23,13 +23,13 @@
         });
         evaluateScrollPosition();
         window.addEventListener('scroll', function() {
-            evaluateScrollPosition(); 
+            evaluateScrollPosition();
         })
-    " 
-    :class="{ 'border-gray-200/60 bg-white/90 border-b backdrop-blur-lg' : scrolled, 'border-transparent border-b bg-transparent translate-y-0' : !scrolled }" 
-    class="box-content sticky top-0 z-50 w-full h-24" 
+    "
+    :class="{ 'border-gray-200/60 bg-white/90 border-b backdrop-blur-lg' : scrolled, 'border-transparent border-b bg-transparent translate-y-0' : !scrolled }"
+    class="box-content sticky top-0 z-50 w-full h-24"
 >
-    <div 
+    <div
         x-show="showOverlay"
         x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0"
@@ -41,7 +41,7 @@
         <div class="z-30 flex items-center justify-between h-24 md:space-x-8">
             <div class="z-20 flex items-center justify-between w-full md:w-auto">
                 <div class="relative z-20 inline-flex">
-                    <a href="{{ route('home') }}" class="flex items-center justify-center space-x-3 font-bold text-zinc-900">
+                    <a href="{{ route('home') }}" class="flex items-center w-auto mt-1 text-lg font-bold transition-all duration-300 ease-out brightness-0 md:w-1/6 hover:brightness-100">
                     <x-logo class="w-auto h-8 md:h-9"></x-logo>
                     </a>
                 </div>
@@ -60,7 +60,7 @@
                             <span class="">Platform</span>
                             <svg :class="{ 'group-hover:-rotate-180' : !mobileMenuOpen, '-rotate-180' : mobileMenuOpen && open }" class="w-5 h-5 transition-all duration-300 ease-out" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" class=""></path></svg>
                         </a>
-                        <div 
+                        <div
                             :class="{ 'hidden md:block opacity-0 invisible md:absolute' : !open, 'md:invisible md:opacity-0 md:hidden md:absolute' : open }"
                             class="top-0 left-0 w-screen space-y-3 transition-transform duration-300 ease-out bg-white border-t border-b border-gray-100 md:shadow-md md:-translate-y-2 md:mt-24 md:block md:group-hover:block md:group-hover:visible md:group-hover:opacity-100 md:group-hover:translate-y-0" x-cloak>
                             <ul class="flex flex-col justify-between mx-auto max-w-7xl md:px-16 md:flex-row">
@@ -107,7 +107,7 @@
                             <span class="">Resources</span>
                             <svg :class="{ 'group-hover:-rotate-180' : !mobileMenuOpen, '-rotate-180' : mobileMenuOpen && open }" class="w-5 h-5 transition-all duration-300 ease-out" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" class=""></path></svg>
                         </a>
-                        <div 
+                        <div
                             :class="{ 'hidden md:block opacity-0 invisible md:absolute' : !open, 'md:invisible md:opacity-0 md:hidden md:absolute' : open }"
                             class="top-0 left-0 w-screen space-y-3 transition-transform duration-300 ease-out bg-white border-t border-b border-gray-100 md:shadow-md md:-translate-y-2 md:mt-24 md:block md:group-hover:block md:group-hover:visible md:group-hover:opacity-100 md:group-hover:translate-y-0" x-cloak>
                             <ul class="flex flex-col justify-between mx-auto max-w-7xl md:flex-row md:px-12">
@@ -168,7 +168,7 @@
 
                 </ul>
             </nav>
-            
+
             @guest
                 <div class="relative z-30 items-center justify-center flex-shrink-0 hidden h-full space-x-3 text-sm md:flex">
                     <x-button href="{{ route('login') }}" tag="a" class="text-sm" color="secondary">Login</x-button>

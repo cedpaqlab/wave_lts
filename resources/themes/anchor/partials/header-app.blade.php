@@ -17,6 +17,6 @@
 
         </div>
     </x-container>
-    
+
     @include('theme::partials.menus.app-mobile')
 </header>
