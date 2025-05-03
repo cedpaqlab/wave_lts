@@ -3,10 +3,10 @@
         <div class="flex flex-col items-center justify-between flex-1 w-full max-w-2xl gap-6 px-8 pt-32 mx-auto text-left md:px-12 xl:px-20 lg:pt-32 lg:pb-16 lg:max-w-7xl lg:flex-row">
             <div class="w-full lg:w-1/2">
                 <h1 class="text-6xl font-bold tracking-tighter text-left sm:text-7xl md:text-8xl sm:text-center lg:text-left text-zinc-900 text-balance">
-                    <span class="block origin-left lg:scale-90 text-nowrap">Louez tout</span> <span class="pr-4 text-transparent text-neutral-600 bg-clip-text bg-gradient-to-b from-neutral-900 to-neutral-500">Sans tracas</span>
+                    <span class="block origin-left lg:scale-90 text-nowrap">Loue ton</span> <span class="pr-4 text-transparent text-neutral-600 bg-clip-text bg-gradient-to-b from-neutral-900 to-neutral-500">Stock !</span>
                 </h1>
                 <p class="mx-auto mt-5 text-2xl font-normal text-left sm:max-w-md lg:ml-0 lg:max-w-md sm:text-center lg:text-left text-zinc-500">
-                    Transformez vos biens inutilisés en opportunités de location grâce à notre plateforme simple et<span class="hidden sm:inline"> rapide</span>.
+                    Transformez vos biens inutilisés en opportunités de location grâce à notre plateforme simple.
                 </p>
                 <div class="flex flex-col items-center justify-center gap-3 mx-auto mt-8 md:gap-2 lg:justify-start md:ml-0 md:flex-row">
                     <x-button size="lg" class="w-full lg:w-auto">Commencer</x-button>
@@ -24,7 +24,7 @@
                         Pourquoi louer avec nous
                     </h3>
                     <p class="mt-2 text-sm font-medium text-zinc-500 mr-10">
-                        Découvrez comment <strong>Loue Ton Stock</strong> transforme vos biens en sources de revenus, rapidement et sans effort.
+                        Découvrez comment <strong>LoueTonStock</strong> transforme vos biens en sources de revenus, rapidement et plus simplement.
                     </p>
                 </div>
                 <div class="pt-5 lg:pt-0 lg:px-10">
