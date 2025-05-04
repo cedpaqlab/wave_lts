@@ -13,6 +13,16 @@
 
 use Illuminate\Support\Facades\Route;
 use Wave\Facades\Wave;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\PublicProductController;
 
 // Wave routes
 Wave::routes();
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('products', ProductController::class);
+    Route::resource('reservations', ReservationController::class);
+});
+
+Route::get('/produit/{slug}', [PublicProductController::class, 'show'])->name('public.product.show');

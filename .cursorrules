@@ -1,0 +1,10 @@
+# stack
+Wave 3 with laravel 11, filament 3, php 8.3
+
+# conventions
+- english comments inside code blocks
+- psr‑12 formatting
+- migrations in database/migrations
+- models in app/Models
+
+# generate tests when touching models
